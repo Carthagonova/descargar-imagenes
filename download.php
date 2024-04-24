@@ -1,7 +1,7 @@
 <?php
 $urls = [
-"https://www.razsurfcamp.com/wp-content/uploads/2023/06/ejemplo-483x311.png",
-"https://www.dominio.com/wp-content/uploads/2023/06/ejemplo-300x193.png?x44721",
+    "https://www.dominio.com/wp-content/uploads/2023/06/ejemplo-300x193.png?x44721",
+    "https://www.dominio.com/wp-content/uploads/2023/06/ejemplgo-300x193.png?x44721",
 ];
 
 foreach ($urls as $url) {
