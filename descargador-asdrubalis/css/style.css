@@ -1,0 +1,86 @@
+/* Estilos para el navegador de carpetas */
+.folder-list {
+    position: fixed; /* Cambiado a fixed para evitar desplazamiento con la página */
+    top: 20%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -20%); /* Ajuste fino para centrar */
+    width: 300px;
+    height: 400px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.folder-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.folder-item:last-child {
+    border-bottom: none;
+}
+
+.folder-item:hover {
+    background-color: #f0f0f0;
+}
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: #f44336; /* Rojo para indicar acción de cierre */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.close-button:hover {
+    background: #d32f2f;
+}
+
+.folder-item:before {
+    content: '\f18f';  /* Código Unicode para el icono de carpeta en Dashicons */
+    font-family: 'Dashicons';
+    color: #135e96; /* Puedes cambiar el color del icono aquí */
+    display: inline-block;
+    width: 20px; /* Ajusta según sea necesario */
+    height: 20px; /* Ajusta según sea necesario */
+    line-height: 20px; /* Asegúrate de que el icono esté centrado verticalmente */
+    text-align: center;
+    margin-right: 5px;
+}
+form#asdruform {
+    max-width: 800px;
+}
+summary.desplegable-advanced {
+    padding: 12px 0px;
+    cursor: pointer;
+    margin: 6px 0px;
+}
+.advanced-box {
+    margin: 12px 0px;
+    padding: 10px;
+    background: beige;
+    max-width: 500px;
+}
+.max_size_asdr {
+    display: flex;
+}
+.max_size_asdr select {
+    max-width: 60px;
+}
+/* Estilos para los elementos select dentro de la caja avanzada */
+.advanced-box select {
+    background-color: #007cba; /* Color azul de WordPress */
+    color: white;
+    border: 2px solid #007cba;
+    border-radius: 3px;
+    padding: .5em .75em; /* Padding similar al de los campos de entrada de WordPress */
+    cursor: pointer;
+}
+
